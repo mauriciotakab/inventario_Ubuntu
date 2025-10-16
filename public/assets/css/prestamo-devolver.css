@@ -1,0 +1,101 @@
+.devolver-main {
+    max-width: 550px;
+    margin: 36px auto 0 auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 14px 0 rgba(23,44,87,0.08);
+    padding: 36px 34px 34px 34px;
+}
+.devolver-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 18px;
+    color: #232a4d;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.devolver-msg {
+    margin-bottom: 18px;
+    color: #19a965;
+    background: #e9faef;
+    border-radius: 8px;
+    padding: 10px 17px;
+    font-weight: 600;
+}
+.devolver-info {
+    margin-bottom: 22px;
+}
+.devolver-info label {
+    color: #6476a8;
+    font-weight: 600;
+    width: 185px;
+    display: inline-block;
+    margin-bottom: 2px;
+}
+.devolver-observ {
+    background: #f7f8fa;
+    border-radius: 7px;
+    padding: 7px 13px;
+    color: #495a89;
+}
+.devolver-form label {
+    font-weight: 700;
+    color: #2c3566;
+    margin-top: 11px;
+    display: block;
+}
+.devolver-input,
+.devolver-select {
+    width: 100%;
+    max-width: 440px;
+    border-radius: 7px;
+    padding: 8px 10px;
+    border: 1px solid #d6e0ef;
+    margin-top: 4px;
+    font-size: 1rem;
+    margin-bottom: 16px;
+    background: #f8f9fc;
+}
+.devolver-actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+.btn-devolver {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    padding: 9px 24px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.15s;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn-devolver:hover { background: #1741a6; }
+.btn-volver {
+    display: inline-block;
+    background: #f5f8fd;
+    color: #223264;
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 8px 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.13s, color 0.13s;
+    border: 1px solid #e7ecfa;
+}
+.btn-volver:hover {
+    background: #e7ecfa;
+    color: #1741a6;
+}
+@media (max-width:750px){
+    .devolver-main{padding:18px 4vw;}
+    .devolver-title{font-size:1.25rem;}
+    .btn-devolver, .btn-volver {font-size: .96rem; padding: 8px 11px;}
+}

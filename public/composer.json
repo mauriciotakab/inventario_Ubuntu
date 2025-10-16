@@ -1,0 +1,14 @@
+{
+    "name": "invitado1/public",
+    "autoload": {
+        "psr-4": {
+            "Invitado1\\Public\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MauBautista"
+        }
+    ],
+    "require": {}
+}

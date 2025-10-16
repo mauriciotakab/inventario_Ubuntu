@@ -1,0 +1,83 @@
+.revisar-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 14px 0 rgba(23,44,87,0.08);
+    padding: 36px 34px 34px 34px;
+}
+.revisar-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: #232a4d;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.takab-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    margin-top: 18px;
+}
+.takab-table th, .takab-table td {
+    padding: 11px 16px;
+    text-align: left;
+}
+.takab-table thead th {
+    background: #e7ecfa;
+    color: #20407c;
+    font-weight: 800;
+    font-size: 1.05rem;
+    border-bottom: 2px solid #d6d6e2;
+}
+.takab-table tbody tr {
+    border-bottom: 1px solid #eef2f8;
+    transition: background 0.12s;
+}
+.takab-table tbody tr:hover {
+    background: #f3f6fc;
+}
+.takab-table td {
+    color: #293366;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+.badge {
+    display: inline-block;
+    padding: 5px 17px;
+    font-size: .99rem;
+    font-weight: 700;
+    border-radius: 11px;
+    letter-spacing: 0.1px;
+}
+.badge-pendiente { background: #fff7e1; color: #b78e17;}
+.badge-aprobada { background: #e7edfa; color: #285ac7;}
+.badge-entregada { background: #e9faef; color: #11a158;}
+.badge-cancelada { background: #f3f3f3; color: #888;}
+.badge-rechazada { background: #ffeaea; color: #e12d39;}
+.badge-gray { background: #f3f3f3; color: #abb;}
+.btn-accion {
+    display: inline-block;
+    padding: 6px 17px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.13s;
+    margin-right: 4px;
+    margin-bottom: 3px;
+}
+.btn-accion.aprobar { background: #3268d1; }
+.btn-accion.aprobar:hover { background: #223264; }
+.btn-accion.entregar { background: #11a158; }
+.btn-accion.entregar:hover { background: #106d3a; }
+@media (max-width:750px){
+    .revisar-main {padding: 18px 4vw;}
+    .revisar-title{font-size:1.2rem;}
+    .takab-table th, .takab-table td {padding: 7px 6px; font-size: .95rem;}
+    .btn-accion {font-size: .95rem; padding: 6px 10px;}
+}

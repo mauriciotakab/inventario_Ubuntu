@@ -1,0 +1,106 @@
+.config-page-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 34px;
+    margin-top: 0;
+}
+.config-header-icon {
+    font-size: 3rem;
+    color: #b8becd;
+    margin-top: 2px;
+}
+.config-header-title {
+    margin: 0 0 2px 0;
+    font-size: 2.1rem;
+    font-weight: 800;
+    color: #181d28;
+}
+.config-header-desc {
+    color: #7e88a6;
+    font-size: 1.12rem;
+    font-weight: 500;
+    margin-top: 2px;
+}
+.config-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    gap: 22px 36px;
+    margin-top: 18px;
+}
+.config-card {
+    background: #fff;
+    border-radius: 15px;
+    border: 1.5px solid #f0f2f7;
+    box-shadow: 0 2px 10px 0 rgba(23,44,87,0.06);
+    padding: 30px 26px 22px 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.config-card-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.config-card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+.config-card-desc {
+    color: #7e91b6;
+    font-size: 1rem;
+}
+.config-card-icon {
+    font-size: 2rem;
+    padding: 13px;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.config-cat { background: #e5edfa; color: #4576c9; }
+.config-prov { background: #e6fae5; color: #20964c; }
+.config-alm { background: #fef2e6; color: #d97a27; }
+.config-uni { background: #f1e6fa; color: #ae43f6; }
+.config-client { background: #e6f6ff; color: #1e6aa8; }
+.config-btn {
+    width: 100%;
+    background: #f6f8fb;
+    color: #283b67;
+    border-radius: 8px;
+    padding: 13px 0;
+    font-weight: 700;
+    font-size: 1.07rem;
+    border: none;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: background 0.15s, color 0.14s;
+    cursor: pointer;
+    display: block;
+}
+.config-btn:hover {
+    background: #2563eb;
+    color: #fff;
+}
+.config-bottom-row {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+}
+.config-bottom-row .config-card {
+    max-width: 520px;
+    width: 100%;
+}
+@media (max-width: 900px) {
+    .config-cards-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+    .config-page-header { flex-direction: column; align-items: flex-start; gap: 9px; }
+    .config-header-icon { font-size: 2.2rem; }
+    .config-header-title { font-size: 1.3rem; }
+    .config-cards-grid { grid-template-columns: 1fr; }
+    .config-bottom-row { margin-top: 22px; }
+}

@@ -1,0 +1,109 @@
+.prestamos-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 14px 0 rgba(23,44,87,0.08);
+    padding: 36px 34px 34px 34px;
+}
+.prestamos-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: #232a4d;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.takab-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    margin-top: 18px;
+}
+.takab-table th, .takab-table td {
+    padding: 11px 16px;
+    text-align: left;
+}
+.takab-table thead th {
+    background: #e7ecfa;
+    color: #20407c;
+    font-weight: 800;
+    font-size: 1.05rem;
+    border-bottom: 2px solid #d6d6e2;
+}
+.takab-table tbody tr {
+    border-bottom: 1px solid #eef2f8;
+    transition: background 0.12s;
+}
+.takab-table tbody tr:hover {
+    background: #f3f6fc;
+}
+.takab-table td {
+    color: #293366;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+.btn-devolver {
+    display: inline-block;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.02rem;
+    padding: 8px 19px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.15s;
+}
+.btn-devolver i {
+    margin-right: 7px;
+}
+.btn-devolver:hover {
+    background: #1741a6;
+    color: #fff;
+}
+@media (max-width:750px){
+    .prestamos-main {padding: 18px 4vw;}
+    .prestamos-title{font-size:1.2rem;}
+    .takab-table th, .takab-table td {padding: 7px 6px; font-size: .95rem;}
+    .btn-devolver {font-size: .95rem; padding: 7px 10px;}
+}
+/* ...tu CSS previo arriba... */
+
+.takab-pagination {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.pagination-btn, .pagination-current {
+    display: inline-block;
+    padding: 7px 16px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 7px;
+    text-decoration: none;
+    background: #f5f8fd;
+    color: #223264;
+    border: 1px solid #e7ecfa;
+    transition: background 0.15s, color 0.13s;
+    margin-right: 2px;
+}
+.pagination-btn:hover {
+    background: #2563eb;
+    color: #fff;
+}
+.pagination-current {
+    background: #2563eb;
+    color: #fff;
+    border-color: #1741a6;
+    cursor: default;
+}
+@media (max-width:750px){
+    .takab-pagination{gap:2px;}
+    .pagination-btn, .pagination-current {font-size:.95rem; padding:5px 9px;}
+}

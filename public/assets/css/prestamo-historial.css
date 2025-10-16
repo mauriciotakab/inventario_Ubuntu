@@ -1,0 +1,139 @@
+.historial-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 14px 0 rgba(23,44,87,0.08);
+    padding: 36px 34px 34px 34px;
+}
+.historial-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: #232a4d;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.search-bar {
+    margin-bottom: 22px;
+    display: flex;
+    justify-content: flex-end;
+}
+.search-bar form {
+    display: flex;
+    gap: 8px;
+}
+.search-bar input[type="text"] {
+    border-radius: 8px;
+    border: 1.5px solid #dbeafe;
+    padding: 8px 13px;
+    font-size: 1rem;
+    background: #f5f8fd;
+    min-width: 210px;
+    color: #27345a;
+    transition: border 0.14s;
+}
+.search-bar input[type="text"]:focus {
+    outline: none;
+    border-color: #2563eb;
+    background: #f0f4fb;
+}
+.search-bar button {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.04rem;
+    padding: 8px 18px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    transition: background 0.15s;
+}
+.search-bar button:hover { background: #1741a6; }
+
+.takab-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    margin-top: 18px;
+}
+.takab-table th, .takab-table td {
+    padding: 11px 14px;
+    text-align: left;
+}
+.takab-table thead th {
+    background: #e7ecfa;
+    color: #20407c;
+    font-weight: 800;
+    font-size: 1.02rem;
+    border-bottom: 2px solid #d6d6e2;
+}
+.takab-table tbody tr {
+    border-bottom: 1px solid #eef2f8;
+    transition: background 0.12s;
+}
+.takab-table tbody tr:hover {
+    background: #f3f6fc;
+}
+.takab-table td {
+    color: #293366;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+.badge {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: .98rem;
+    font-weight: 700;
+    border-radius: 11px;
+    letter-spacing: 0.1px;
+}
+.badge-pendiente { background: #fff7e1; color: #b78e17;}
+.badge-devuelto { background: #e9faef; color: #11a158;}
+.badge-vencido { background: #ffeaea; color: #e12d39;}
+.badge-bueno { background: #eafbf3; color: #13b34c;}
+.badge-danado { background: #fff8d3; color: #b39b1c;}
+.badge-perdido { background: #ffeaea; color: #e12d39;}
+/* PAGINACIÓN */
+.pagination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.pagination a, .pagination span.active {
+    display: inline-block;
+    padding: 7px 17px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none;
+    background: #f5f8fd;
+    color: #223264;
+    border: 1px solid #e7ecfa;
+    transition: background 0.15s, color 0.13s;
+}
+.pagination a:hover {
+    background: #2563eb;
+    color: #fff;
+}
+.pagination span.active {
+    background: #2563eb;
+    color: #fff;
+    border-color: #1741a6;
+    cursor: default;
+}
+@media (max-width:900px){
+    .historial-main {padding: 14px 2vw;}
+    .historial-title{font-size:1.3rem;}
+    .takab-table th, .takab-table td {padding: 6px 4px; font-size:.93rem;}
+    .search-bar input[type="text"]{min-width:120px; font-size:.95rem;}
+    .pagination a, .pagination span.active {padding: 5px 9px; font-size: .94rem;}
+}
